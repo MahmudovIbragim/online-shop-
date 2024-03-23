@@ -9,7 +9,7 @@ import plus_icon from "../../../assets/ic_baseline-plus.svg";
 import edit_icon from "../../../assets/preferences-svgrepo-com.svg";
 import EditForm from "./editForm/EditForm";
 import {
-  useGetProductQuery,
+  // useGetProductQuery,
   useGetProductsQuery,
 } from "../../../redux/api/product";
 import { useAddFavoriteMutation } from "../../../redux/api/favorite";
@@ -21,16 +21,16 @@ interface TypeHome {}
 const Home: FC<TypeHome> = () => {
   const navigate = useNavigate();
   const { data } = useGetProductsQuery();
-  const { data: product } = useGetProductQuery();
+  // const { data: product } = useGetProductQuery();
   const [createFavorite] = useAddFavoriteMutation();
   const [postBasket] = useAddBasketMutation();
   const [isOpen, setIsOpen] = useState(false);
   const [favoriteHeart, setFavoriteHeat] = useState<null | string>(null);
   const [editId, setEditId] = useState<null | string>(null);
 
-  const handleChangeProduct = async (id: number) => {
-    await product(id);
-  };
+  // const handleChangeProduct = async (id: number) => {
+  //   await product(id);
+  // };
 
   useEffect(() => {
     const isAuth = localStorage.getItem("isAuth");
