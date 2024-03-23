@@ -5,9 +5,10 @@ import Button, { ButtonProps } from "../../../ui/customButton/CustomButton";
 import { Field, Form, Formik } from "formik";
 import { registerValidate } from "../../../../utils/validations/registrationValidate";
 import scss from "./Register.module.scss";
+import { useRegistrationMutation } from "../../../../redux/api/auth";
 
 const RegisterForm = () => {
-	const [createUser] = useCreateUsersMutation();
+	const [createUser] = useRegistrationMutation();
 	const navigate = useNavigate();
 	const handleAddUserSubmit = async (values: any) => {
 		const { userName, email, password } = values;

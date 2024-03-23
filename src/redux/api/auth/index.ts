@@ -25,4 +25,4 @@ const api = index.injectEndpoints({
 	}),
 });
 
-export const { useLoginMutation } = api;
+export const { useLoginMutation, useRegistrationMutation } = api;
