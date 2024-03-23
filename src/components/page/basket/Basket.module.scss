@@ -1,0 +1,104 @@
+.Basket {
+  .Content {
+    height: 100vh;
+    .back_btn {
+      display: flex;
+      justify-content: end;
+      margin-top: 20px;
+      button {
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 4px;
+        outline: none;
+      }
+    }
+    .basket_render {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 50px;
+      .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        padding: 20px 20px;
+        background-color: #fafafa;
+        position: relative;
+        img {
+          max-width: 220px;
+          width: 100%;
+          border-radius: 8px;
+          &:hover {
+            transform: scale(1.1);
+            transition: 1s;
+          }
+        }
+        h1 {
+          font-size: 23px;
+          font-weight: 500;
+          line-height: 28px;
+          letter-spacing: 0.3px;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 28px;
+          letter-spacing: 0.5px;
+        }
+        .quantity {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          max-width: 180px;
+          width: 100%;
+          p {
+            font-size: 25px;
+            border-radius: 4px;
+            padding: 5px 15px;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+          }
+          img {
+            max-width: 20px;
+            padding: 5px 5px;
+            border: black 1px solid;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover {
+              transform: none;
+            }
+          }
+        }
+        button {
+          position: absolute;
+          top: 70%;
+          left: 90%;
+          font-size: 16px;
+          font-weight: 500;
+          background-color: black;
+          color: white;
+          padding: 8px 15px;
+          cursor: pointer;
+        }
+      }
+      h2 {
+        text-align: end;
+      }
+      button {
+        align-self: flex-end;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: black;
+        color: white;
+        padding: 13px 30px;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+    }
+  }
+}

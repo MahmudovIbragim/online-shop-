@@ -1,0 +1,79 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 408px;
+  width: 100%;
+  position: relative;
+  h2 {
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  input {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 15px;
+    max-width: 408px;
+    box-sizing: border-box;
+    width: 100% !important;
+    height: auto !important;
+    border: 1px solid rgb(106, 106, 106);
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    outline: none;
+  }
+  .input {
+    border: 2px solid blue;
+    background-color: rgba(0, 0, 255, 0.078);
+  }
+  .redInput {
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.122);
+  }
+  label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .error_txt {
+    position: absolute;
+    top: 180px;
+    color: red;
+  }
+  .passwod_txt {
+    position: absolute;
+    top: 305px;
+    color: red;
+  }
+  .btn {
+    button {
+      font-size: 20px;
+      border-radius: 4px;
+      width: 100% !important;
+      margin-top: 20px;
+      padding: 10px 10px;
+      color: white;
+      background-color: black !important;
+    }
+  }
+  .login_variant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 93px;
+    p {
+      color: rgb(117, 117, 117);
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
+    a {
+      font-size: 16px;
+      font-weight: 500;
+      
+    }
+  }
+}
+
+

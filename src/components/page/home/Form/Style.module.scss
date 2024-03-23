@@ -1,0 +1,50 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  max-width: 446px;
+  width: 100% !important;
+  gap: 20px;
+  label {
+    font-size: 18px;
+  }
+  input {
+    max-width: 446px;
+    width: 100% !important;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    height: auto !important;
+    padding: 10px 0px 10px 15px;
+    margin-top: 10px;
+  }
+  p {
+    display: flex;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+    color: green;
+  }
+  .btn {
+    display: flex;
+    gap: 16px;
+
+    button {
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      border: none;
+      outline: none;
+      padding: 13px 5px;
+      margin-top: 20px;
+      max-width: 215px;
+      width: 100%;
+      &:first-child {
+        background-color: black;
+      }
+    }
+  }
+}

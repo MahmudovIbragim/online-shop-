@@ -1,0 +1,29 @@
+.Header {
+  .Content {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      .right {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            cursor: pointer;
+            img {
+              width: 27px;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.Footer {
+  padding-top: 80px;
+  border-top: 3px solid black;
+  .Content {
+    .info_shop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 82px;
+      .left_Content {
+      }
+      .right_Content {
+        display: flex;
+        max-width: 744px;
+        width: 100%;
+        gap: 146px;
+        flex-wrap: wrap;
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+        }
+      }
+    }
+    .txt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+  }
+  .end_footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 1903px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
