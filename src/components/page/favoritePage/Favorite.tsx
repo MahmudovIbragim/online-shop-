@@ -9,8 +9,7 @@ const Favorite = () => {
         <div className={scss.Content}>
           <div className={scss.rendering}>
             {data?.map((item) => (
-              <div key={item.product?._id}>
-                <h1>{item.product?.price}</h1>
+              <div className={scss.card} key={item.product?._id}>
                 <img src={item.product?.photoUrl} alt="" />
               </div>
             ))}

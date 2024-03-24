@@ -14,10 +14,12 @@ const Product = () => {
     <div className={scss.Product}>
       <div className="container">
         <div className={scss.Content}>
-          <div className={scss.Product}>
-            <h1>{data?.productName}</h1>
+          <div className={scss.card}>
             <img src={data?.photoUrl} alt="" />
-            <p>{data?.quantity}</p>
+            <div className={scss.right}>
+              <h1>{data?.productName}</h1>
+              <button>Купить</button>
+            </div>
           </div>
         </div>
       </div>

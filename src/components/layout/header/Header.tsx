@@ -9,7 +9,6 @@ const Header = () => {
   const navigate = useNavigate();
   const [isAuth, setIsAuth] = useState<null | string>(null);
   const [isNavigate, setIsNavigate] = useState(false);
-
   const navigatePageFunc = () => {
     setIsNavigate(!isNavigate);
     if (isNavigate === false) {
@@ -75,6 +74,7 @@ const Header = () => {
               </ul>
             </div>
           </nav>
+          <div className={scss.video_Content}></div>
         </div>
       </div>
     </header>

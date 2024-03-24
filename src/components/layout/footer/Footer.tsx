@@ -1,8 +1,8 @@
 import scss from "./Footer.module.scss";
 import brand_name from "../../../assets/BRANDNAME.svg";
 import domen from "../../../assets/Frame 105.svg";
-import left from '../../../assets/div.footer-links-wrap.svg'
-import right from '../../../assets/div.footer-link-second-wrap.svg'
+import left from "../../../assets/div.footer-links-wrap.svg";
+import right from "../../../assets/div.footer-link-second-wrap.svg";
 const Footer = () => {
   return (
     <div className={scss.Footer}>
@@ -35,10 +35,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-          <div className={scss.end_footer}>
-              <img src={left} alt="" />
-              <img src={right} alt="" />
-          </div>
+      <div className={scss.end_footer}>
+        <img src={left} alt="" />
+        <img src={right} alt="" />
+      </div>
     </div>
   );
 };

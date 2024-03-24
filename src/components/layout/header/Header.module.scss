@@ -25,5 +25,11 @@
         }
       }
     }
+    .video_Content {
+      &video ::-webkit-media-controls-current-time-display {
+        display: none;
+      }
+      
+    }
   }
 }

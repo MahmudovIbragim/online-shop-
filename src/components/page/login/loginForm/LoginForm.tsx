@@ -76,9 +76,7 @@ const LoginForm = () => {
       />
       {formik.touched.password && formik.errors.password ? (
         <>
-          <p className={scss.passwod_txt}>
-            {formik.errors.password}
-          </p>
+          <p className={scss.passwod_txt}>{formik.errors.password}</p>
         </>
       ) : null}
       <div className={scss.btn}>
@@ -86,8 +84,8 @@ const LoginForm = () => {
       </div>
       <div className={scss.login_variant}>
         <p>ИЛИ</p>
-      <Link to={"/register"}>Зарегестрироватся</Link>
-      <Link to={"/register"}>Забыли Пароль</Link>
+        <Link to={"/register"}>Зарегестрироватся</Link>
+        <Link to={"/register"}>Забыли Пароль</Link>
       </div>
     </form>
   );
